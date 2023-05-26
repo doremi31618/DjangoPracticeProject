@@ -4,6 +4,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 
 # Create your models here.
+# this model is used for practicing generaic foreign key
 class LikedItem(models.Model):
   user = models.ForeignKey(User, on_delete=models.CASCADE)
   content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
